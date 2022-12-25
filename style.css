@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%) ;
+    --Grayish-Blue: hsl(246, 25%, 77%);
+    --transparent-dark-blue: hsl(249, 10%, 26%, 0.3);
+}
+.form input::placeholder {
+    color: black;
+}
+body{
+    font-family: 'Poppins';
+    Font-size: 16px;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color:var(--Red)
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:12px;
+    height: 100vh;
+}
+.leftContent{
+    width: 33rem;
+    margin-right: 4%;
+}
+.leftContent .title{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+.leftContent .prg{
+    color: rgb(219, 213, 213);
+}
+.rightContent{
+    width: 27rem;
+}
+.rightContent .offer{
+   color: white;
+   background-color: var(--Blue);
+   text-align: center;
+   padding: 13px;
+   border-radius: 8px;
+   margin-bottom: 14px;
+   font-size: 15px;
+   box-shadow: 0px 3px 9px 0px rgba(74,69,69,0.75);
+   -webkit-box-shadow: 0px 3px 9px 0px rgba(74,69,69,0.75);
+   -moz-box-shadow: 0px 3px 9px 0px rgba(74,69,69,0.75);
+}
+.rightContent .offer span{
+    color: rgb(219, 213, 213);
+}
+.rightContent .form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 12px;
+    box-shadow: 0px 3px 9px 0px rgba(74,69,69,0.75);
+   -webkit-box-shadow: 0px 3px 9px 0px rgba(74,69,69,0.75);
+   -moz-box-shadow: 0px 3px 9px 0px rgba(74,69,69,0.75);
+}
+.form .input {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form .input input{
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    border: 1px solid rgb(219, 213, 213);
+    color: var(--Dark-Blue);
+    width: 100%;
+}
+.form .input input.error {
+    background-image: url("./images/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.3rem;
+    color: var(--red);
+    border: 2px solid var(--Red);
+  }
+.form .input span{
+    color: var(--Red);
+    margin-left: auto;
+    font-size: 11px;
+}
+.form .input small {
+	color: var(--Red);
+    margin-left: auto;
+    font-size: 11px;
+	visibility: visible;
+    margin-top: -3px;
+}
+
+.form .input.error small {
+	visibility: hidden;
+}
+.rightContent .button{
+    color: white;
+    background-color: var(--Green);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Poppins';
+}
+.rightContent .button:active{
+    background-color: hsl(154, 50%, 51%)
+}
+.form p{
+    font-size: 10px;
+    color: rgb(219, 213, 213);
+    margin-bottom: 2px;
+}
+.form p span{
+    color: var(--Red);
+}
+
+@media only screen and (max-width: 800px) {
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        height: auto;
+    }
+    .leftContent{
+        width: 90%;
+    }
+    .rightContent{
+        width: 90%;
+        margin-bottom: 12px;
+    }
+  }
